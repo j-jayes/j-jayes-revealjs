@@ -1,5 +1,5 @@
 ---
-title: Template
+title: Presentation title
 format:
   dark2-revealjs: default
 author: 
@@ -8,7 +8,6 @@ author:
     affiliation: Lund University
 date: last-modified
 bibliography: refs.bib
-favicon: _extensions/j-jayes/dark2/favicon.ico
 ---
 
 ## Introduction
