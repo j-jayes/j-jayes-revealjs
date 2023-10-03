@@ -1,9 +1,14 @@
 ---
 title: Template
 format:
-  j-jayes-revealjs-revealjs: default
-author: Jonathan Jayes
+  dark2-revealjs: default
+author: 
+  - name: Jonathan Jayes
+    email: jonathan.jayes@ekh.lu.se
+    affiliation: Lund University
 date: last-modified
+bibliography: refs.bib
+favicon: _extensions/j-jayes/dark2/favicon.ico
 ---
 
 ## Introduction
@@ -57,7 +62,18 @@ To cross-reference, you have several options, for example:
 - Beamer-like `.button` class provided by this theme, e.g. [[Appendix]{.button}](#sec-appendix)
 - Quarto's native cross-ref syntax, e.g., "See @sec-appendix."
 
+## Citations
 
+Citations follow the standard
+[Quarto format](https://quarto.org/docs/authoring/footnotes-and-citations.html#citations)
+and be sourced from BibLaTex, BibTeX, or CLS files. For example:
+
+ - [Topic 1:]{.alert} Spatial Frictions [@Hsieh_Moretti_2019]
+
+## References
+
+::: {#refs}
+:::
 
 ## Appendix {#sec-appendix}
 

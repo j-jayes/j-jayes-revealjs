@@ -95,7 +95,26 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto.css">
   <link href="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -401,10 +420,16 @@
 <div class="quarto-title-author-name">
 Jonathan Jayes 
 </div>
+<div class="quarto-title-author-email">
+<a href="mailto:jonathan.jayes@ekh.lu.se">jonathan.jayes@ekh.lu.se</a>
 </div>
+        <p class="quarto-title-affiliation">
+            Lund University
+          </p>
+    </div>
 </div>
 
-  <p class="date">2023-10-03</p>
+  <p class="date">October 3, 2023</p>
 </section>
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
@@ -451,8 +476,23 @@ Jonathan Jayes
 <p>To cross-reference, you have several options, for example:</p>
 <ul>
 <li>Beamer-like <code>.button</code> class provided by this theme, e.g.&nbsp;<a href="#/sec-appendix"><span class="button">Appendix</span></a></li>
-<li>Quarto’s native cross-ref syntax, e.g., “See <a href="#/sec-appendix">Section&nbsp;2.4</a>.”</li>
+<li>Quarto’s native cross-ref syntax, e.g., “See <a href="#/sec-appendix">Section&nbsp;2.6</a>.”</li>
 </ul>
+</section>
+<section id="citations" class="slide level2">
+<h2>Citations</h2>
+<p>Citations follow the standard <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html#citations">Quarto format</a> and be sourced from BibLaTex, BibTeX, or CLS files. For example:</p>
+<ul>
+<li><span class="alert">Topic 1:</span> Spatial Frictions <span class="citation" data-cites="Hsieh_Moretti_2019">(<a href="#/references" role="doc-biblioref" onclick="">Hsieh and Moretti 2019</a>)</span></li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Hsieh_Moretti_2019" class="csl-entry" role="listitem">
+Hsieh, Chang-Tai, and Enrico Moretti. 2019. <span>“Housing Constraints and Spatial Misallocation.”</span> <em>American Economic Journal: Macroeconomics</em> 11 (2): 39.
+</div>
+</div>
 </section>
 <section id="sec-appendix" class="slide level2">
 <h2>Appendix</h2>
@@ -616,7 +656,7 @@ Jonathan Jayes
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
